@@ -12,14 +12,17 @@
 
         <article class="mtr-brick <?php echo get_post_class(); if((get_post_meta(get_the_ID(), 'width', true)) == 'wide-brick'){echo ' mtr-wide-brick';}?>" id="post-<?php the_ID(); ?>" style="background: url(
                 <?php echo $src[0]; ?> ) !important; background-size: cover;">
-            <header id="mtr-post-header">
+            <header class="mtr-post-header">
                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
             </header>
-            <div id="mtr-post-meta">
+            <div class="mtr-post-meta">
                 <span><img src="<?php echo get_template_directory_uri(); ?>/images/time.png"></span>
                 <span class="meta-details"> <?php echo get_the_date() ?></span>
                 <span><img src="<?php echo get_template_directory_uri(); ?>/images/comments.png"></span>
                 <span class="meta-details"> <?php echo get_comments_number() ?></span>
+                <div class="read-more">
+                    <span><a href="<?php the_permalink() ?>">Read More</a></span>
+                </div>
             </div>
         </article>
 

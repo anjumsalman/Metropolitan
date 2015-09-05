@@ -40,6 +40,6 @@ jQuery(document).ready(function() {
         if ($(window).scrollTop() < 30){
             jQuery('#mtr-masthead').css('opacity','1');
         }
-    });
-
+    });   
+   
 });
