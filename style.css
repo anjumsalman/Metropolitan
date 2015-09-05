@@ -156,6 +156,19 @@ a:visited {
     }
 }
 
+@media only screen and (min-width: 1920px) {
+    .mtr-brick {
+        width: calc(25% - 40px);
+    }
+    #mtr-main {
+        width: 70%;
+        margin: 70px auto 20px auto;
+    }
+    .mtr-wide-brick {
+        width: calc(50% - 40px);
+    }
+}
+
 
 /* ------------Sidenav--------------- */
 
