@@ -17,7 +17,9 @@
             </header>
             <div id="mtr-post-meta">
                 <span><img src="<?php echo get_template_directory_uri(); ?>/images/time.png"></span>
-                <span> <?php echo get_the_date() ?></span>
+                <span class="meta-details"> <?php echo get_the_date() ?></span>
+                <span><img src="<?php echo get_template_directory_uri(); ?>/images/comments.png"></span>
+                <span class="meta-details"> <?php echo get_comments_number() ?></span>
             </div>
         </article>
 

@@ -13,7 +13,30 @@ Tags:
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-size: 100%;
     font-family: "Open Sans";
+    line-height: 1.8;
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 90%;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    body {
+        font-size: 130%;
+    }
 }
 
 a {
@@ -28,6 +51,40 @@ a:visited {
     color: #4AA392;
 }
 
+p {
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 170%;
+}
+
+h3 {
+    font-size: 150%
+}
+
+h1,
+h2,
+h3 {
+    color: #77C9BC;
+    font-weight: normal;
+}
+
+ul,
+ol {
+    text-indent: 5%;
+    list-style-position: inside;
+}
+
+img {
+    max-width: 960px;
+    height: auto;
+}
+
 
 /* ---------Header---------- */
 
@@ -36,7 +93,6 @@ a:visited {
     background-color: #77C9BC;
     width: 100%;
     padding: 6px 0px;
-    vertical-align: middle;
     position: fixed;
     top: 0px;
     overflow: hidden;
@@ -87,6 +143,7 @@ a:visited {
     margin: 0 6px;
 }
 
+
 /* ---------- Main -----------*/
 
 .mtr-brick {
@@ -127,6 +184,10 @@ a:visited {
     opacity: .9;
 }
 
+.meta-details {
+    margin-right: 15px;
+}
+
 #mtr-post-meta img {
     padding: 0 2px;
 }
@@ -139,7 +200,7 @@ a:visited {
         width: calc(50% - 40px);
     }
     .mtr-wide-brick {
-        width: calc(50% - 40px);
+        width: calc(100% - 40px);
     }
 }
 
@@ -221,4 +282,43 @@ a:visited {
 #mtr-footer {
     min-height: 60px;
     width: 100%;
+}
+
+
+/* -------------Single Post------------*/
+
+#mtr-single-main {
+    width: 70%;
+    max-width: 900px;
+    margin: 70px auto 20px auto;
+}
+
+#mtr-post-content img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#mtr-single-post-meta {
+    color: gray;
+}
+
+@media only screen and (max-width: 720px) {
+    #mtr-single-main {
+        width: 90%;
+        margin: 70px auto 20px auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #mtr-single-main {
+        width: 90%;
+        margin: 50px auto 20px auto;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    #mtr-single-main {
+        width: 60%;
+        margin: 70px auto 20px auto;
+    }
 }
