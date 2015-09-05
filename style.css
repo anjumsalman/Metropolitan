@@ -1,0 +1,204 @@
+/*
+Theme Name: Metropolitan
+Theme URI: https://github.com/bit_junky/Metropolitan
+Author: Salman Anjum
+Author URI: http://braginteractive.com
+Description: 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #77C9BC;
+}
+
+a:visited {
+    color: #4AA392;
+}
+
+
+/* ---------Header---------- */
+
+#mtr-masthead {
+    height: 40px;
+    background-color: #77C9BC;
+    width: 100%;
+    padding: 6px 0px;
+    vertical-align: middle;
+    position: fixed;
+    top: 0px;
+    overflow: hidden;
+    z-index: 999;
+}
+
+#mtr-masthead img {
+    padding: 2px;
+}
+
+#mtr-masthead img:hover {
+    transform: scale(.8);
+    transition-duration: .5s;
+    transition-timing-function: ease-in;
+}
+
+#mtr-menu {
+    float: left;
+    margin-left: 6px;
+    margin-top: 4px;
+}
+
+#mtr-logo {
+    margin: auto;
+    display: table;
+}
+
+#mtr-logo:hover {
+    transform: rotateY(20deg);
+    transition-duration: .5;
+    transition-timing-function: ease-out;
+}
+
+#mtr-actions {
+    float: right;
+    margin-right: 6px;
+    margin-top: 4px;
+}
+
+#mtr-actions span {
+    margin: 0 6px;
+}
+
+/* ---------- Main -----------*/
+
+.mtr-brick {
+    width: calc(33% - 40px);
+    min-height: 300px;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.mtr-wide-brick {
+    width: calc(66% - 40px);
+}
+
+.mtr-brick:hover {
+    box-shadow: 0px 0px 10px 0px gray;
+}
+
+.mtr-brick header h2 a {
+    color: white;
+    font-weight: lighter;
+}
+
+#mtr-main {
+    margin: 70px auto 20px auto;
+    width: 80%;
+}
+
+#mtr-post-meta {
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+    left: 0;
+    width: 100%;
+    background: #6BDDC7;
+    color: white;
+    font-size: 15px;
+    opacity: .9;
+}
+
+#mtr-post-meta img {
+    padding: 0 2px;
+}
+
+@media only screen and (max-width: 720px) {
+    #mtr-main {
+        width: 90%;
+    }
+    .mtr-brick {
+        width: calc(50% - 40px);
+    }
+    .mtr-wide-brick {
+        width: calc(50% - 40px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .mtr-brick {
+        width: calc(100% - 40px);
+    }
+    #mtr-main {
+        width: 100%;
+        margin: 55px auto 20px auto;
+    }
+    .mtr-wide-brick {
+        width: calc(100% - 40px);
+    }
+}
+
+
+/* ------------Sidenav--------------- */
+
+#mtr-sidenav {
+    width: 60px;
+    background-color: #4AA392;
+    position: fixed;
+    left: -60px;
+    height: 100%;
+    top: 0px;
+    opacity: .8;
+    z-index: 1000;
+}
+
+#mtr-sidenav ul {
+    list-style: none;
+    margin: auto;
+    display: table;
+}
+
+#mtr-sidenav ul li {
+    margin: 20px 0;
+}
+
+#mtr-sidenav ul li:first-child {
+    margin: 11px 0;
+}
+
+
+/* ------------Sidebar--------------- */
+
+#mtr-sidebar {
+    width: 300px;
+    background-color: #4AA392;
+    position: fixed;
+    right: -300px;
+    height: 100%;
+    top: 0px;
+    z-index: 1001;
+    opacity: .8;
+}
+
+#close-sidebar {
+    margin: 10px;
+}
+
+
+/* -------------Footer----------------*/
+
+#mtr-footer {
+    min-height: 60px;
+    width: 100%;
+}
