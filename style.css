@@ -48,8 +48,12 @@ a:visited {
 }
 
 #mtr-masthead img:hover {
+    -webkit-transform: scale(.8);
+    -ms-transform: scale(.8);
     transform: scale(.8);
+    -webkit-transition-duration: .5s;
     transition-duration: .5s;
+    -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
 }
 
@@ -65,8 +69,11 @@ a:visited {
 }
 
 #mtr-logo:hover {
+    -webkit-transform: rotateY(20deg);
     transform: rotateY(20deg);
+    -webkit-transition-duration: .5;
     transition-duration: .5;
+    -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
 
