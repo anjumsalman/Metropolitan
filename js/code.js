@@ -32,12 +32,12 @@ jQuery(document).ready(function() {
     });
     
     jQuery(window).scroll(function(){
-        if ($(window).scrollTop() > 30){
+        if ($(window).scrollTop() > 29){
             jQuery('#mtr-masthead').css('opacity','.8');
         }
     });
-    jQuery(window).scroll(function(){
-        if ($(window).scrollTop() < 30){
+    jQuery(window).scroll(function(){        
+        if ($(window).scrollTop() < 29){
             jQuery('#mtr-masthead').css('opacity','1');
         }
     });   

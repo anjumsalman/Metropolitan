@@ -16,12 +16,20 @@
                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
             </header>
             <div class="mtr-post-meta">
-                <span><img src="<?php echo get_template_directory_uri(); ?>/images/time.png"></span>
+                <span>
+                    <object width="15px" height="15px" type="image/svg+xml" data="<?php echo get_template_directory_uri(); ?>/images/time.svg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/time.png">
+                    </object>                
+                </span>
                 <span class="meta-details"> <?php echo get_the_date() ?></span>
-                <span><img src="<?php echo get_template_directory_uri(); ?>/images/comments.png"></span>
+                <span>
+                    <object width="15px" height="15px" type="image/svg+xml" data="<?php echo get_template_directory_uri(); ?>/images/comments.svg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/comments.png">
+                    </object> 
+                </span>
                 <span class="meta-details"> <?php echo get_comments_number() ?></span>
                 <div class="read-more">
-                    <span><a href="<?php the_permalink() ?>">Read More</a></span>
+                    <span><a href="<?php the_permalink(); ?>">Read More</a></span>
                 </div>
             </div>
         </article>

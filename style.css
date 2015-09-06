@@ -81,7 +81,7 @@ ol {
 }
 
 img {
-    max-width: 960px;
+    max-width: 90%;
     height: auto;
 }
 
@@ -103,12 +103,12 @@ img {
     padding: 2px;
 }
 
-#mtr-masthead img:hover {
-    -webkit-transform: scale(.8);
-    -ms-transform: scale(.8);
-    transform: scale(.8);
-    -webkit-transition-duration: .5s;
-    transition-duration: .5s;
+#mtr-actions img:hover, #mtr-menu img:hover {
+    -webkit-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9);
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
 }
@@ -158,13 +158,13 @@ img {
     width: calc(66% - 40px);
 }
 
-.mtr-brick:hover {
-    box-shadow: 0px 0px 10px 0px gray;
-}
-
 .mtr-brick header h2 a {
     color: white;
     font-weight: lighter;
+}
+
+.mtr-brick header{
+    line-height: 1.4;
 }
 
 #mtr-main {
@@ -172,24 +172,43 @@ img {
     width: 80%;
 }
 
-#mtr-post-meta {
+.mtr-post-meta {
     position: absolute;
-    bottom: 0px;
+    bottom: -100px;
     padding: 10px;
     left: 0;
-    width: 100%;
+    width: calc(100% - 20px);
     background: #6BDDC7;
     color: white;
     font-size: 15px;
     opacity: .9;
+    -webkit-transition: bottom 1s;
+    transition: bottom 1s;
 }
 
 .meta-details {
     margin-right: 15px;
 }
 
-#mtr-post-meta img {
+.mtr-post-meta img {
     padding: 0 2px;
+}
+
+.read-more {
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 150%;
+    font-weight: lighter;
+    display: table;
+    border: 1px solid white;
+}
+
+.read-more a {
+    color: white;
+}
+
+.mtr-brick:hover .mtr-post-meta {
+    bottom: 0px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -240,7 +259,7 @@ img {
     left: -60px;
     height: 100%;
     top: 0px;
-    opacity: .8;
+    opacity: .9;
     z-index: 1000;
 }
 

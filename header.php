@@ -27,7 +27,9 @@
                 <span><img id="open-sidebar" src="<?php echo get_template_directory_uri(); ?>/images/sidebar.png"></span>
             </div>
             <div id="mtr-logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png">
+                <object width="70px" height="30px" type="image/svg+xml" data="<?php echo get_template_directory_uri(); ?>/images/logo.svg">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png">
+                </object>
             </div>
 
         </header>
